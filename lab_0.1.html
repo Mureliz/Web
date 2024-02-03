@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title> lab_0.1</title>
+</head>
+<body>
+    <form action="#" method="get">
+        <fieldset>  <!-- сгруппирует элементы формы -->
+            <legend>Выберите языки программирования, которые вы знаете:</legend>
+            <p><label for="c++">    <!-- с помощью for="*" связываю label
+                                     в соответствии с id (*) с нужным input -->
+                <input type="checkbox" id="c++" name="languages" value="C++">
+                C++
+            </label>
+            <label for="c#">
+                <input type="checkbox" id="c#" name="languages" value="C#">
+                C#
+            </label>
+            <label for="python">
+                <input type="checkbox" id="python" name="languages" value="Python">
+                Python
+            </label><br>
+            <label for="php">
+                <input type="checkbox" id="php" name="languages" value="PHP">
+                PHP
+            </label>
+            <label for="another">
+                <input type="checkbox" id="another" name="languages" value="Another">
+                Another
+            </label></p>
+        </fieldset>
+        <input type="submit" value="Готово">
+    </form>
+</body>
+</html>
