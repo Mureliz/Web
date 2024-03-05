@@ -5,6 +5,6 @@ $month = 11;    // количество месяцев, затраченных �
 $days = $month * 16;    // всё время в днях
 
 $days_per_language = $days / $num_languages;
-echo $days_per_language;
+echo 'task 3 result: ', $days_per_language, "\n";
 
-// 44
+echo 'task 4 result: ', 8**2, "\n";
