@@ -8,11 +8,11 @@ echo "Переменная a: ";
 $a = fgets(STDIN);
 echo "Переменная b: ";
 $b = fgets(STDIN);
-if ($a % $b == 0):
+if ($a % $b == 0) {
     echo "a делится на b, результат ", $a / $b, "\n";
-else:
+} else {
     echo "a делится на b с остатком ", $a % $b, "\n";
-endif;
+}
 
 
 echo "\nРабота со степенью и корнем\n";
@@ -21,9 +21,9 @@ $sr = sqrt(245);
 
 $array = array(4, 2, 5, 19, 13, 0, 10);
 $sumSqr = 0;
-foreach ($array as $value):
+foreach ($array as $value) {
     $sumSqr += $value**2;
-endforeach;
+}
 
 echo "1. 2^10 = ", $st,
      "\n2. 245^(1/2) = ", $sr,
@@ -55,9 +55,9 @@ echo "\nРабота с рандомом\n";
 echo rand(1, 100), "\n";
 
 $array = [];
-for ($i = 0; $i < 10; $i++):
+for ($i = 0; $i < 10; $i++) {
     $array[$i] = rand(1, 100);
-endfor;
+}
 var_dump($array);
 
 
@@ -77,11 +77,12 @@ echo "Введите число: ";
 $a = fgets(STDIN);
 
 $arrayDivisor = [];
-for ($d = 1; $d <= $a/2; $d++):
-    if ($a % $d == 0):
+for ($d = 1; $d <= $a/2; $d++) {
+    if ($a % $d == 0) {
         $arrayDivisor[] = $d;
-    endif;
-endfor;
+    }
+}
+
 $arrayDivisor[] = intval($a);
 echo "Делители числа {$a}:\n";
 var_dump($arrayDivisor);
@@ -89,10 +90,11 @@ var_dump($arrayDivisor);
 $array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 $sum = 0;
 $count = 0;
-foreach ($array as $value):
-    if ($sum <= 10):
+foreach ($array as $value) {
+    if ($sum <= 10) {
         $sum += $value;
         $count++;
-    endif;
-endforeach;
+    }
+}
 echo "Чтобы сумма получилась больше 10, надо сложить первые {$count} чисел.";
+
