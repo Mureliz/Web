@@ -12,7 +12,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $email = $mysqli->real_escape_string($_POST['email']);
     $title = $mysqli->real_escape_string($_POST['title']);
     $category = $mysqli->real_escape_string($_POST['categories']);
-    $description = $mysqli->real_escape_string($_POST['text']);
+    $description = $mysqli->real_escape_string($_POST['description']);
 
     $query = "INSERT INTO ad (email, title, description, category) VALUES ('$email', '$title', '$description', '$category')";
     $mysqli->query($query);
